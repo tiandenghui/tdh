@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/config-client/config-client.iml" filepath="$PROJECT_DIR$/config-client/config-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-consumer/eureka-consumer.iml" filepath="$PROJECT_DIR$/eureka-consumer/eureka-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-feign-hystrix/eureka-feign-hystrix.iml" filepath="$PROJECT_DIR$/eureka-feign-hystrix/eureka-feign-hystrix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-provider/eureka-provider.iml" filepath="$PROJECT_DIR$/eureka-provider/eureka-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-registry-server/eureka-registry-server.iml" filepath="$PROJECT_DIR$/eureka-registry-server/eureka-registry-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/horcrux-spring-cloud-zdy.iml" filepath="$PROJECT_DIR$/horcrux-spring-cloud-zdy.iml" />
+    </modules>
+  </component>
+</project>

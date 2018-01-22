@@ -1,0 +1,13 @@
+server:
+  port: 8202
+spring:
+  application:
+    name: eureka-provider-peer1
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://horcrux:hor66@127.0.0.1:8761/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${server.port}
+

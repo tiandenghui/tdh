@@ -1,0 +1,22 @@
+server:
+  port: 8761
+security:
+  basic:
+    enabled: true
+  user:
+    name: horcrux
+    password: horcrux66
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://horcrux:horcrux66@localhost:8761/eureka
+  server:
+    enable-self-preservation: false # 生产环境不建议关闭，开发时为了方便，暂时关闭
+    eviction-interval-timer-in-ms: 4000
+  instance:
+    prefer-ip-address: true
+spring:
+  jmx:
+    default-domain: eureka-registry-server

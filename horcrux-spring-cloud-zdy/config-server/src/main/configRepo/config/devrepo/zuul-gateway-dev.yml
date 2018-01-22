@@ -1,0 +1,31 @@
+eureka.server.ip: 172.20.0.15
+spring:
+  application:
+    name: zuul-gateway
+eureka:
+  client:
+    serviceUrl:
+      defaultZone:  http://horcrux:horcrux66@${eureka.server.ip}:8761/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+
+security:
+  oauth2:
+    client:
+      client-id: acme
+      client-secret: acmesecret
+      access-token-uri: http://172.20.0.24:5000/uaa/oauth/token
+      userAuthorizationUri: http://172.20.0.24:5000/uaa/oauth/authorize
+    resource:
+      user-info-uri: http://172.20.0.24:5000/uaa/user
+
+
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: eureka-consumer
+    api-b:
+      path: /api-b/**
+      serviceId: eureka-provider

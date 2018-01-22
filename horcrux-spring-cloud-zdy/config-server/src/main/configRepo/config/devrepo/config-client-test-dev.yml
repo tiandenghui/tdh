@@ -1,0 +1,6 @@
+consu: consulFromServerConfig
+
+#kafka
+spring.cloud.stream.kafka.binder.zk-nodes: 172.20.0.34:2181
+spring.cloud.stream.kafka.binder.brokers: 172.20.0.34:9092
+spring.cloud.bus.trace.enabled: true

@@ -1,0 +1,8 @@
+server:
+  port: 8801
+spring:
+  application:
+    name: config-client
+#spring.cloud.config.label=master
+#spring.cloud.config.profile=dev
+spring.cloud.config.uri: http://127.0.0.1:9999/

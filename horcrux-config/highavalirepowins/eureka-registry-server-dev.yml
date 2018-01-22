@@ -1,0 +1,13 @@
+security:
+  basic:
+    enabled: true
+  user:
+    name: horcrux
+    password: hor66
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: ${eureka.registry.peer1.url},${eureka.registry.peer2.url},${eureka.registry.peer2.url}
+

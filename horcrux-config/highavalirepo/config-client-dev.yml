@@ -1,0 +1,20 @@
+consu: consulFromServerConfig-test, config server HA.
+
+
+#kafka
+#spring.cloud.stream.kafka.binder.zk-nodes: 172.16.0.27:2181
+#spring.cloud.stream.kafka.binder.brokers: 172.16.0.27:9092
+
+spring:
+  application:
+    name: config-client
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: ${eureka.registry.peer1.url},${eureka.registry.peer2.url}
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+

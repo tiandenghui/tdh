@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    config:
+      uri: ${config.server.uri.peer1}
+      profile: dev
+  application:
+    name: eureka-feign-hystrix
+  jmx:
+    default-domain: eureka-feign-hystrix
+server:
+  port: 8010
