@@ -68,6 +68,8 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="190">
               <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="190">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -78,7 +80,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="57">
               <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="22" />
-              <folding />
+              <folding>
+                <marker date="1516590818461" expanded="true" signature="166:188" ph="http://12…0.0.1:9999" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -218,7 +222,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="52" />
     <option name="y" value="52" />
     <option name="width" value="1582" />
@@ -267,6 +271,27 @@
               <item name="horcrux-spring-cloud-zdy" type="b2602c69:ProjectViewProjectNode" />
               <item name="horcrux-spring-cloud-zdy" type="462c0819:PsiDirectoryNode" />
               <item name="config-client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="horcrux-spring-cloud-zdy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="horcrux-spring-cloud-zdy" type="462c0819:PsiDirectoryNode" />
+              <item name="config-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="horcrux-spring-cloud-zdy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="horcrux-spring-cloud-zdy" type="462c0819:PsiDirectoryNode" />
+              <item name="config-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="horcrux-spring-cloud-zdy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="horcrux-spring-cloud-zdy" type="462c0819:PsiDirectoryNode" />
+              <item name="config-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="horcrux-spring-cloud-zdy" type="b2602c69:ProjectViewProjectNode" />
@@ -534,15 +559,15 @@
       <workItem from="1516324137816" duration="11477000" />
       <workItem from="1516348085357" duration="2188000" />
       <workItem from="1516583109791" duration="570000" />
-      <workItem from="1516589685310" duration="861000" />
+      <workItem from="1516589685310" duration="1679000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42354000" />
+    <option name="totallyTimeSpent" value="43172000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -963,14 +988,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="22" />
-          <folding />
+          <folding>
+            <marker date="1516590818461" expanded="true" signature="166:188" ph="http://12…0.0.1:9999" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config-client/src/main/resources/bootstrap.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="133">
+          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
           <folding />
         </state>
       </provider>
