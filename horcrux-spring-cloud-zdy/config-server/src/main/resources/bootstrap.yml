@@ -14,8 +14,8 @@ spring:
             basedir: C:\Users\YFL\Desktop\GIT\config_file
 eureka:
   client:
-   # healthcheck:
-      #enabled: true
+    healthcheck:
+      enabled: true
     serviceUrl:
       defaultZone: ${client.serverUrl}
   instance:
