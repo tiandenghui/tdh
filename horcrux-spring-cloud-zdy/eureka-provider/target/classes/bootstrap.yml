@@ -10,4 +10,12 @@
 #  instance:
 #    prefer-ip-address: true
 #    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${server.port}
-#
+server:
+  port: 8200
+spring:
+  application:
+    name: eureka-provider
+  cloud:
+    config:
+      uri: ${config.server.uri.test}
+      profile: dev
