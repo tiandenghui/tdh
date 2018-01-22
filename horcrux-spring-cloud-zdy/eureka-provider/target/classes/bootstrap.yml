@@ -1,9 +1,0 @@
-server:
-  port: 8200
-spring:
-  application:
-    name: eureka-provider
-  cloud:
-    config:
-      uri: ${config.server.uri.test}
-      profile: dev
