@@ -34,9 +34,9 @@
 			<artifactId>spring-cloud-starter-feign</artifactId>
 		</dependency>
 		<!--hystrix-dashboard 监控-->
-		<!--<dependency>
+		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
-		</dependency>-->
+		</dependency>
 	</dependencies>
 </project>

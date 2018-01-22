@@ -6,12 +6,12 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
-//import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
+import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
 
 @SpringBootApplication
 @EnableEurekaClient
 @EnableFeignClients
-//@EnableHystrixDashboard
+@EnableHystrixDashboard
 public class FeighHystrixApplication extends SpringBootServletInitializer {
 
     public static void main(String[] args) {
