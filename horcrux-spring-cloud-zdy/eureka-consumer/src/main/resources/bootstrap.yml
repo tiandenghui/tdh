@@ -1,12 +1,16 @@
+
+server:
+  port: 8211
 spring:
-  cloud:
-    config:
-      uri: ${config.server.uri.peer1}
-      profile: dev
   application:
     name: eureka-consumer
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config-server
+      profile: dev
   jmx:
     default-domain: eureka-consumer
-server:
-  port: 8000
-ribbon.custom.app.name: eureka-provider
+eureka.client.serviceUrl.defaultZone: ${client.serverUrl}
+
