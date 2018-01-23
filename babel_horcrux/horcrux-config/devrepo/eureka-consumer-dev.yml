@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: eureka-consumer
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://horcrux:hor66@localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+
+spring.cloud.circuit.breaker.enabled: true
+ribbon.custom.app.name: eureka-provider
+consumerkey: consumerFromConfig

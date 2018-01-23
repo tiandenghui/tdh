@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: eureka-mybatis
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${eureka.registry.peer4.url}
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+
+providerkey: providerFromConfig

@@ -13,7 +13,9 @@ import java.util.Arrays;
 @SpringBootApplication
 @EnableEurekaServer
 public class RegistryApplication extends SpringBootServletInitializer {
+
     private static final Logger LOGGER = LoggerFactory.getLogger(RegistryApplication.class);
+
     public static void main(String[] args) {
         try {
             SpringApplication.run(RegistryApplication.class, args);

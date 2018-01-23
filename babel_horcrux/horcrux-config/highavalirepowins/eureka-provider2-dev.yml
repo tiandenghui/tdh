@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: eureka-provider2
+logging:
+  level:
+    root: INFO
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: ${eureka.registry.peer1.url},${eureka.registry.peer2.url}
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+
+providerkey: providerFromConfig

@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    config:
+      uri: ${config.server.uri.peer1}
+      profile: dev
+  application:
+    name: zuul-gateway
+  jmx:
+    default-domain: zuul-gateway
+server:
+  port: 7000
+
+

@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: security-oauth2-server
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: ${eureka.registry.peer1.url},${eureka.registry.peer2.url}
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+
+security:
+  user:
+    password: pass1234
+  sessions: if_required
+  oauth2:
+    client:
+      scope: openid
+      client-id: acme
+      client-secret: acmesecret
+      authorized-grant-types: authorization_code,refresh_token,password
+ 
+logging.level.org.springframework.security: DEBUG

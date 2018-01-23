@@ -1,0 +1,20 @@
+server:
+  port: 7200
+spring:
+  cloud:
+    config:
+      uri: ${config.server.uri.peer1}
+      profile: dev
+  application:
+    name: eureka-mybatis-for-windows
+  datasource:
+    #linux上mysql环境
+    url: jdbc:mysql://172.16.0.27:3306/horcrux
+    username: root
+    password: Hor6666!
+#     url: jdbc:mysql://172.20.0.17:3306/horcr
+#    password: 123456
+#    username: root
+    driver-class-name: com.mysql.jdbc.Driver
+  jmx:
+    default-domain: eureka-mybatis

@@ -1,0 +1,18 @@
+spring:
+  cloud:
+    config:
+      profile: dev
+      discovery:
+        enabled: true
+        service-id: config-server
+  application:
+    name: config-client
+server:
+  port: 9988
+
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone:  http://horcrux:hor66@172.20.0.17:8762/eureka/,http://horcrux:hor66@172.20.0.24:8763/eureka/

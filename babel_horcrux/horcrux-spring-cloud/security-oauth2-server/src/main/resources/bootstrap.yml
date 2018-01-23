@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    config:
+      uri: ${config.server.uri.peer2}
+      profile: dev
+  application:
+    name: security-oauth2-server
+  jmx:
+    default-domain: security-oauth2-server
+server:
+  port: 5000
+  context-path: /uaa
+
+
+

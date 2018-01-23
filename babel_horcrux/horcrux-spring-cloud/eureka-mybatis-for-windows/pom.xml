@@ -1,0 +1,91 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>horcrux-spring-cloud</artifactId>
+        <groupId>com.kuliao.horcrux</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>eureka-mybatis-for-windows</artifactId>
+    <packaging>war</packaging>
+
+    <name>eureka-mybatis</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <mybatis.spring.version>1.2.4</mybatis.spring.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka</artifactId>
+        </dependency>
+
+        <!--健康检查开启，会在日志中打印出很多url映射,如 health、env、beans等等，可以在浏览器访问查看信息 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>  <!--mysql驱动包  -->
+            <version>5.1.41</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>1.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>RELEASE</version>
+        </dependency>
+
+		<dependency>
+		    <groupId>com.aliyun.oss</groupId>
+		    <artifactId>aliyun-sdk-oss</artifactId>
+		    <version>2.0.4</version>
+		</dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.1.26</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.8.7</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.8.7</version>
+        </dependency>        
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>2.8.7</version>
+		</dependency>
+		
+		<!-- 将接口API打的jar包关联进来 -->
+	    <dependency>
+		  <groupId>user-api</groupId>
+		  <artifactId>user-api</artifactId>
+		  <version>1.0.0</version>
+	    </dependency>
+    </dependencies>
+</project>

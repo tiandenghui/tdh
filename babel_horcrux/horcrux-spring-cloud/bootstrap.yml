@@ -1,0 +1,4 @@
+config.server.uri.peer1: http://172.20.0.17:9991
+config.server.uri.peer2: http://172.20.0.24:9992
+config.server.uri.peer3: http://172.20.0.155:9993
+config.server.uri.test: http://172.20.0.15:9999

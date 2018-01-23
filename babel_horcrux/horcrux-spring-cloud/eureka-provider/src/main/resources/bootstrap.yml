@@ -1,0 +1,11 @@
+server:
+  port: 8200
+spring:
+  cloud:
+    config:
+      uri: ${config.server.uri.test}
+      profile: dev
+  application:
+    name: eureka-provider
+  jmx:
+    default-domain: eureka-provider

@@ -1,0 +1,25 @@
+server:
+  port: 8764
+security:
+  basic:
+    enabled: true
+  user:
+    name: horcrux
+    password: hor66
+spring:
+  application:
+    name: eureka-registry-server
+eureka:
+  instance:
+    hostname: peer3
+    lease-renewal-interval-in-seconds: 10
+    lease-expiration-duration-in-seconds: 30
+    instance-id: ${spring.application.name}:${eureka.instance.hostname}:${server.port}
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://horcrux:hor66@peer1:8762/eureka/,http://horcrux:hor66@peer2:8763/eureka/
+  server:
+      enable-self-preservation: false # 生产环境不建议关闭，开发时为了方便，暂时关闭
+      eviction-interval-timer-in-ms: 4000

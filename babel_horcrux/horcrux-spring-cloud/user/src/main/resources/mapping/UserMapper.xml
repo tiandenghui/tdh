@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.kuliao.horcrux.dao.user.UserMapper" >
+
+  <!-- 获取用户信息集合 -->
+  <select id="queryUserList" resultType="java.util.HashMap" parameterType="java.util.HashMap" >
+	SELECT u.id,u.login_id loginId,u.login_pwd,u.user_name userName,DATE_FORMAT(u.create_date, '%Y-%m-%d %H:%i:%s') create_Date_Str 
+	FROM user u	
+  </select>
+  
+</mapper>

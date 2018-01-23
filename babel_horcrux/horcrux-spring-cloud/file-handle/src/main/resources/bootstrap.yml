@@ -1,0 +1,25 @@
+server:
+  port: 5050
+spring:
+  cloud:
+    config:
+      uri: ${config.server.uri.peer1}
+      profile: dev
+  application:
+    name: file-handle
+  http:
+    multipart:
+      max-file-size: 600Mb      # Max file size，默认1M
+      max-request-size: 600Mb   # Max request size，默认10M
+  datasource:
+      url: jdbc:mysql://localhost:3306/horcr
+      password: root
+      username: root
+      driver-class-name: com.mysql.jdbc.Driver
+  jmx:
+    default-domain: file-handle
+
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 60000
+ribbon:
+  ConnectTimeout: 3000
+  ReadTimeout: 60000

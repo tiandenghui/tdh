@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: eureka-feign-hystrix
+logging:
+  level:
+    root: INFO
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://horcrux:horcrux66@172.20.0.15:8761/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}

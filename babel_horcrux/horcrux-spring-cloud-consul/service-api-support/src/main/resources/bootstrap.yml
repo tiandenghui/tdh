@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    consul:
+      host: 172.16.0.26
+      port: 8500
+      discovery:
+        healthCheckPath: ${management.contextPath}/health
+        healthCheckInterval: 15s
+        instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  application:
+    name: service-api-support
+server:
+  port: 8602

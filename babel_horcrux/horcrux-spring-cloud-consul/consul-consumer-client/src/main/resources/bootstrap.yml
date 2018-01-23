@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    consul:
+      host: 172.16.0.26
+      port: 8500
+      discovery:
+        # management.contextPath=/admin
+        healthCheckPath: ${management.contextPath}/health
+        healthCheckInterval: 15s
+        instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+#        instance-id: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
+  application:
+    name: consul-consumer-client
+server:
+  port: 8999

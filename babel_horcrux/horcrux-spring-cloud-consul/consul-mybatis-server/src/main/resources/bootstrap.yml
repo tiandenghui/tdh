@@ -1,0 +1,18 @@
+spring:
+  cloud:
+    consul:
+      host: 172.16.0.26
+      port: 8500
+      discovery:
+        healthCheckPath: ${management.contextPath}/health
+        healthCheckInterval: 15s
+        instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  application:
+    name: consul-mybatis-server
+  datasource:
+    url: jdbc:mysql://172.20.0.17:3306/horcr
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+server:
+  port: 8522

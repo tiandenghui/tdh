@@ -1,0 +1,15 @@
+server:
+  port: 8800
+spring:
+  application:
+    name: zookeeper-service
+  cloud:
+    zookeeper:
+      discovery:
+        root: horcrux-spring-cloud-zookeeper
+      connect-string: 172.16.0.27:2181
+
+#ps
+#会将应用数据存放在 root/path 节点
+#path参数不配置，默认是应用名; root参数不配置，默认是／　
+#所以当前应用存放路径为：/horcrux-spring-cloud-zookeeper/zookeeper-service

@@ -1,0 +1,8 @@
+eureka.server.ip.peer1: 172.20.0.17
+eureka.server.ip.peer2: 172.20.0.24
+eureka.server.ip.peer3: 172.20.0.34
+eureka.server.ip.peer4: 172.17.0.6
+peer1.port: 8762
+peer2.port: 8763
+peer3.port: 8764
+peer4.port: 8765

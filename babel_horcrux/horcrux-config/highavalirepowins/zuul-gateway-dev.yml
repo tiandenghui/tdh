@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: zuul-gateway
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone:  ${eureka.registry.peer4.url}
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+
+security:
+  oauth2:
+    client:
+      client-id: acme
+      client-secret: acmesecret
+      access-token-uri: http://172.20.0.24:5000/uaa/oauth/token
+      userAuthorizationUri: http://172.20.0.24:5000/uaa/oauth/authorize
+    resource:
+      user-info-uri: http://172.20.0.24:5000/uaa/security/user
+
+
+      
+      
+#zuul:
+#  routes:
+#    api-a:
+#      path: /api-a/**
+#      serviceId: eureka-consumer
+#    zuul.ignored-patterns=/**/hello/**   忽略路由某服务的某个特定接口 
+#      path: /api-b/**
+#       忽略除了api-a之外所有路由     ignoredServices: '*'  
+zuul:
+  ignoredServices: '*'     
+  routes:
+    eureka-consumer: /api-a/**

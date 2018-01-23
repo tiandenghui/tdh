@@ -6,3 +6,6 @@ target
 /horcrux-spring-cloud-zdy/eureka-provider/*.iml
 /horcrux-spring-cloud-zdy/eureka-registry-server/*.iml
 /horcrux-spring-cloud-zdy/eureka-registry-server/target
+/babel_horcrux/horcrux-spring-cloud/.idea
+/babel_horcrux/horcrux-spring-cloud/config-server/*.iml
+*.iml

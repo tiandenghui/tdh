@@ -1,0 +1,20 @@
+server:
+  port: 9988
+spring:
+  cloud:
+    config:
+      uri: ${config.server.uri.peer1}
+      profile: dev
+#      discovery:
+#        enabled: true
+#        service-id: config-server
+
+  application:
+    name: config-client
+
+#eureka:
+#  client:
+#    healthcheck:
+#      enabled: true
+#    serviceUrl:
+#      defaultZone:  http://horcrux:hor66@172.20.0.17:8762/eureka/,http://horcrux:hor66@172.20.0.24:8763/eureka/

@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: zuul-file-upload
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${eureka.registry.peer1.url},${eureka.registry.peer2.url},${eureka.registry.peer4.url}
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}

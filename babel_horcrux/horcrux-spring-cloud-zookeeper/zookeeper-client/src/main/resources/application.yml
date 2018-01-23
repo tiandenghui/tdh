@@ -1,0 +1,16 @@
+server:
+  port: 8810
+spring:
+  application:
+    name: zookeeper-client
+  cloud:
+    zookeeper:
+      discovery:
+        register: false
+        root: /horcrux-spring-cloud-zookeeper  #是所有zookeeper应用的parent节点，不需要修改
+      connect-string: 172.16.0.27:2181     #是zookeeper集群节点，不需要修改
+      dependencies:  #配置依赖的应用，如果配置了这项，当依赖的应用没启动的时候，该微服务启动会报错
+        service-zookeeper:
+          required: true
+          path: zookeeper-service   #是要调用的应用名
+          loadBalancerType: ROUND_ROBIN

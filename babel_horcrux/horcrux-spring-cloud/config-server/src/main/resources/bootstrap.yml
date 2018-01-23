@@ -1,0 +1,33 @@
+spring:
+  cloud:
+    config:
+      server:
+        svn:
+          uri: https://github.com/dongwenqiang002/horcrux-kuliao/tree/master/horcrux-config
+          default-label: devrepo
+#        default-label: devrepo
+#        default-label: trunk
+  profiles:
+    active: subversion
+  application:
+    name: config-server
+
+logging:
+  levels:
+    org.springframework.boot.env.PropertySourcesLoader: TRACE
+    org.springframework.cloud.config.server: DEBUG
+
+#kafka
+#spring.cloud.stream.kafka.binder.zk-nodes: 172.16.0.27:2181
+#spring.cloud.stream.kafka.binder.brokers: 172.16.0.27:9092
+
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://horcrux:hor66@172.20.0.17:8762/eureka/,http://horcrux:hor66@172.20.0.24:8763/eureka/,http://horcrux:hor66@172.20.0.155:8764/eureka/
+  instance:
+    lease-expiration-duration-in-seconds: 30
+    lease-renewal-interval-in-seconds: 10
+    instance-id: ${spring.application.name}:${server.port}

@@ -18,3 +18,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
   jmx:
     default-domain: eureka-mybatis
+
+
+
+

@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    config:
+      uri: ${config.server.uri.peer1}
+      profile: dev
+  application:
+    name: eureka-consumer
+  jmx:
+    default-domain: eureka-consumer
+server:
+  port: 8000
+ribbon.custom.app.name: eureka-provider
