@@ -9,3 +9,8 @@ target
 /babel_horcrux/horcrux-spring-cloud/.idea
 /babel_horcrux/horcrux-spring-cloud/config-server/*.iml
 *.iml
+/babel_horcrux/horcrux-spring-cloud/eureka-consumer/eureka-consumer.iml
+/babel_horcrux/horcrux-spring-cloud/eureka-mybatis-for-linux/eureka-mybatis-for-linux.iml
+/babel_horcrux/horcrux-spring-cloud/eureka-provider/eureka-provider.iml
+/babel_horcrux/horcrux-spring-cloud/user/src/main/webapp/WEB-INF/lib
+/babel_horcrux/horcrux-spring-cloud/user/mybatis.log.1
