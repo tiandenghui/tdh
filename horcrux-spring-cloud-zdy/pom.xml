@@ -14,6 +14,7 @@
         <module>eureka-consumer</module>
         <module>config-client</module>
         <module>eureka-feign-hystrix</module>
+        <module>eureka-mybatis-for-linux</module>
     </modules>
     <packaging>pom</packaging>
 
